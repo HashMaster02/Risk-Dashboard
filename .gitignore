@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Database files (IMPORTANT - don't commit your data!)
+*.db
+*.sqlite
+*.sqlite3
+investment_data.db
+
+# Environment variables
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Streamlit
+.streamlit/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints
