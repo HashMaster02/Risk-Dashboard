@@ -3,3 +3,4 @@ uvicorn[standard]==0.34.0
 pydantic==2.10.5
 streamlit==1.41.1
 pandas==2.2.3
+supervisor==4.2.5
