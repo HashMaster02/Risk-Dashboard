@@ -1,10 +1,13 @@
 import sqlite3
 import threading
+import os
 from datetime import datetime
 from typing import List, Dict, Optional
 from contextlib import contextmanager
 
-DB_PATH = "investment_data.db"
+# Use /data directory if it exists (Railway volume), otherwise use current directory
+DB_DIR = "/data" if os.path.exists("/data") else "."
+DB_PATH = os.path.join(DB_DIR, "investment_data.db")
 
 class DatabaseManager:
     """Thread-safe database manager for investment data"""
